@@ -11,10 +11,6 @@
 
 # ember-frost-login
 
- * [Installation](#Installation)
- * [API](#API)
- * [Examples](#Examples)
- * [Contributing](#Contributing)
 
 ## Installation
 ```
@@ -22,10 +18,35 @@ ember install ember-frost-login
 ```
 
 ## API
-Coming soon
+| Attribute | Type | Value | Description |
+| --------- | ---- | ----- | ----------- |
+| `logo` | `string` | `<icon-name>` | the name of a logo svg you will use |
+| `brandingStrip` | `string` | `<icon-name>` | the name of a branding strip svg you will use |
+| `on-enter` | `string` | `<action-name>` | triggers associated action when Enter key is pressed |
+
 
 ## Examples
-Coming soon
+```handlebars
+{{#frost-login logo='myLogo' brandingStrip='myBrand' on-enter='submitLogin' as |section|}}
+  {{#if section.form}}
+  {{frost-bunsen-form
+    model=loginFormModel
+    onChange=(action "loginFormValueChanged")
+    onValidation=(action 'onValidation')
+    value=loginFormValue
+  }}
+  {{/if}}
+  {{#if section.actions}}
+    {{frost-button
+      disabled=(not valid)
+      on-click=(action "submitLogin")
+      priority="primary"
+      size="medium"
+      text="Login"
+    }}
+  {{/if}}
+{{/frost-login}}
+```
 
 ## Development
 ### Setup

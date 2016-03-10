@@ -11,10 +11,10 @@
 
 # ember-frost-loading
 
- * [Installation](#Installation)
- * [API](#API)
- * [Examples](#Examples)
- * [Contributing](#Contributing)
+
+
+
+
 
 ## Installation
 ```

@@ -12,10 +12,10 @@
 # ember-frost-about-dialog
 simple about dialog
 
- * [Installation](#Installation)
- * [API](#API)
- * [Examples](#Examples)
- * [Contributing](#Contributing)
+
+
+
+
 
 ## Installation
 ```

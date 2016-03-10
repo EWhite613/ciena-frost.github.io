@@ -12,10 +12,10 @@
 # ember-frost-sort
 the drop-down select widget to rule them all
 
- * [Installation](#Installation)
- * [API](#API)
- * [Examples](#Examples)
- * [Contributing](#Contributing)
+
+
+
+
 
 ## Installation
 ```
