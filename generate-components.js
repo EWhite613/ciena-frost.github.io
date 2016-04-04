@@ -27,6 +27,7 @@ Array.prototype.contains = function (obj) {
   return false;
 }
 
+console.log('Github Token: ' + process.env.ghToken)
 var ignoreList = ['ember-frost-bunsen', 'ember-frost-checkbox', 'ember-frost-brackets-snippets', 'ember-frost-button']
 var contributorIgnoreList = ['chrisstoll', 'travis-ci-ciena', 'agonzalez-cyan']
 var options = {
