@@ -10,6 +10,7 @@ var Finder = require('fs-finder');
 var removeMd = require('remove-markdown-and-html');
 var pjson = require('./package.json');
 
+
 String.prototype.replaceAll = function (search, replacement) {
   var target = this;
   return target.replace(new RegExp(search, 'g'), replacement);
@@ -27,6 +28,10 @@ Array.prototype.contains = function (obj) {
   return false;
 }
 
+var args = process.argv.slice(2);
+if (args.length >= 1){
+  process.env['ghToken'] = args[0];
+}
 console.log('Github Token: ' + process.env.ghToken)
 var ignoreList = ['ember-frost-bunsen', 'ember-frost-checkbox', 'ember-frost-brackets-snippets', 'ember-frost-button']
 var contributorIgnoreList = ['chrisstoll', 'travis-ci-ciena', 'agonzalez-cyan']
