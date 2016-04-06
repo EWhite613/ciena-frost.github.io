@@ -64,5 +64,14 @@ module.exports = function (environment) {
     ENV.isDemo = true
   }
 
+  if (environment === 'internal') {
+    ENV.baseURL = '/'
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }
+    ENV.isProd = true
+    ENV.isDemo = true
+  }
+
   return ENV
 }

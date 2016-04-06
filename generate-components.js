@@ -32,7 +32,7 @@ var args = process.argv.slice(2);
 if (args.length >= 1){
   process.env['ghToken'] = args[0];
 }
-console.log('Github Token: ' + process.env.ghToken)
+
 var ignoreList = ['ember-frost-bunsen', 'ember-frost-checkbox', 'ember-frost-brackets-snippets', 'ember-frost-button']
 var contributorIgnoreList = ['chrisstoll', 'travis-ci-ciena', 'agonzalez-cyan']
 var options = {
